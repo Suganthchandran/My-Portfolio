@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import { motion } from 'framer-motion';
 import '../styles/Home.css';
-import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
 import { Bio } from '../data/constants.js';
 import { Button } from './Button.jsx';
 import Typewriter from 'typewriter-effect';
@@ -44,16 +46,16 @@ export const Home = () => {
 
                 <div className="home-icon">
                     <div className='social-icons'>
-                        <FaGithub />
+                       <Link to='https://github.com/Suganthchandran'> <FaGithub /> </Link>
                     </div>
                     <div className='social-icons'>
-                        <FaTwitter />
+                       <Link to='https://x.com/Suganth__7'> <FaTwitter /> </Link>
                     </div>
                     <div className='social-icons'>
-                        <FaInstagram />
+                       <Link to='https://leetcode.com/u/Suganth__/'> <SiLeetcode /> </Link>
                     </div>
                     <div className='social-icons'>
-                        <FaLinkedinIn />
+                       <Link to='https://www.linkedin.com/in/suganth121204/'> <FaLinkedinIn /> </Link>
                     </div>
                 </div>
 

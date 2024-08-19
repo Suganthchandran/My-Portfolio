@@ -1,0 +1,147 @@
+.contact {
+    padding: 0px 16%;
+    /* margin-top: 5rem; */
+    /* width: 100%; */
+    height: 100vh;
+    background-color: #171F38;
+}
+
+#contact-form{
+    position: relative;
+}
+
+.contact h1{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 4rem 0 ;
+    color: white;
+}
+
+.contact-message form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; 
+    margin: 0 auto; 
+    height: auto;
+}
+
+.contact-form-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#FirstName,#email{
+    width: 46%;
+}
+
+#LastName,#subject{
+    width: 48%;
+}
+
+.contact-message input, .contact-message textarea {
+    background-color: var(--snd-bf-color);
+    border: none;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.contact-message input:focus, .contact-message textarea:focus{
+    outline: 2px solid var(--main-color);
+    box-shadow: 0 0 10px 2px var(--main-color);
+}
+
+.contact-message input::placeholder, .contact-message textarea::placeholder {
+    color: #aaa;
+}
+
+.btn-submit {
+    display: inline-block;
+    position: absolute;
+    top: 25rem;
+    right: 8%;
+    padding: 1rem;
+    margin: 2.5rem 3rem;
+    width: 70%;
+    font-size: 1.4rem;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 5rem;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: var(--snd-bf-color);
+}
+
+@media (max-width:700px) {
+    
+    .contact h1{
+        font-size: 3rem;
+    }
+
+    .btn-submit {
+        right: 3.5%;
+    }
+
+    .contact {
+        padding: 0px 14%;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width:550px) {
+    
+    .contact-form-content{
+        flex-direction: column;
+    }
+
+    #FirstName,#email{
+        width: 100%;
+    }
+    
+    #LastName,#subject{
+        width: 100%;
+    }
+
+    .btn-submit {
+        top: 35rem;
+        right: 3%;
+    }
+
+    .contact {
+        padding: 0px 10%;
+        margin-left: -25px;
+    }
+}
+
+@media (max-width:450px) {
+    .btn-submit {
+        right: 1%;
+        padding: 0.7rem;
+    }
+}
+
+@media (max-width:400px) {
+    
+    .contact h1{
+        font-size: 2.5rem;
+        margin-left: -5px;
+    }
+
+    .btn-submit {
+        left: 0;
+    }
+
+}
+
+@media (max-width:360px) {
+    
+    .contact {
+        padding: 0px 5%;
+        margin-left: -5px;
+    }
+}

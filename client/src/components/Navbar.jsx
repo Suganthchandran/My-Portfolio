@@ -17,11 +17,10 @@ export const Navbar = () => {
                     <GiHamburgerMenu onClick={() => setIsSmall(true)} />
                 </div>
                 <div className="navbar-content">
-                    <div className="navbar-content-item">Home</div>
-                    <div className="navbar-content-item">About</div>
-                    <div className="navbar-content-item">Skill</div>
-                    <div className="navbar-content-item">Projects</div>
-                    <div className="navbar-content-item">Contact</div>
+                    <div className="navbar-content-item"><a href='#home'>Home</a></div>
+                    <div className="navbar-content-item"><a href='#skill'>Skill</a></div>
+                    <div className="navbar-content-item"><a href='#work'>Work</a></div>
+                    <div className="navbar-content-item"><a href='#contact'>Contact</a></div>
                 </div>
             </header>
 
@@ -36,11 +35,10 @@ export const Navbar = () => {
                     transition={{ duration: 0.5 }} 
                 >
                     <AiOutlineClose className="close-icon" onClick={() => setIsSmall(false)} />
-                    <div className="dropdown-item">Home</div>
-                    <div className="dropdown-item">About</div>
-                    <div className="dropdown-item">Skill</div>
-                    <div className="dropdown-item">Projects</div>
-                    <div className="dropdown-item">Contact</div>
+                    <div className="dropdown-item"><a href='#home'>Home</a></div>
+                    <div className="dropdown-item"><a href='#skill'>Skill</a></div>
+                    <div className="dropdown-item"><a href='#work'>Work</a></div>
+                    <div className="dropdown-item"><a href='#contact'>Contact</a></div>
                 </motion.div>
                 </>
             )}
