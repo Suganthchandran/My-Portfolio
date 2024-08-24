@@ -4,16 +4,19 @@ import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { Skill } from "./components/Skill";
 import { Work } from "./components/Work";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
-      <Skill/>
-      <Work/>
-      <Contact/>
-      <Footer/>
+      <Router>
+        <Navbar />
+        <Home />
+        <Skill />
+        <Work />
+        <Contact />
+        <Footer />
+      </Router>
     </div>
   );
 }
