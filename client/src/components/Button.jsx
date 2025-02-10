@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/Button.css'
 
-export const Button = (props) => {
+export const Button = ({ name, onClick }) => {
   return (
-    <div>
-        <button className="home-btn">{props.name}</button>
-    </div>
-  )
-}
+    <button className="home-btn" onClick={onClick}>
+      {name}
+    </button>
+  );
+};

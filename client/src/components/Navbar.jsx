@@ -19,7 +19,7 @@ export const Navbar = () => {
                 <div className="navbar-content">
                     <div className="navbar-content-item"><a href='#home'>Home</a></div>
                     <div className="navbar-content-item"><a href='#skill'>Skill</a></div>
-                    <div className="navbar-content-item"><a href='#work'>Work</a></div>
+                    <div className="navbar-content-item"><a href='#work'>Project</a></div>
                     <div className="navbar-content-item"><a href='#contact'>Contact</a></div>
                 </div>
             </header>
@@ -37,7 +37,7 @@ export const Navbar = () => {
                     <AiOutlineClose className="close-icon" onClick={() => setIsSmall(false)} />
                     <div className="dropdown-item"><a href='#home'>Home</a></div>
                     <div className="dropdown-item"><a href='#skill'>Skill</a></div>
-                    <div className="dropdown-item"><a href='#work'>Work</a></div>
+                    <div className="dropdown-item"><a href='#work'>Project</a></div>
                     <div className="dropdown-item"><a href='#contact'>Contact</a></div>
                 </motion.div>
                 </>

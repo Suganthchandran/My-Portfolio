@@ -58,8 +58,9 @@ export const Home = () => {
                        <Link to='https://www.linkedin.com/in/suganth121204/'> <FaLinkedinIn /> </Link>
                     </div>
                 </div>
-
-                <Button name="Download CV" />
+                <div className='home-button'>
+                    <Button name="Resume" onClick={() => window.open('/resume.pdf', '_blank')} />
+                </div>
             </div>
 
             <motion.div

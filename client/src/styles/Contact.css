@@ -61,7 +61,7 @@
 .btn-submit {
     display: inline-block;
     position: absolute;
-    top: 25rem;
+    top: 26rem;
     right: 8%;
     padding: 1rem;
     margin: 2.5rem 3rem;
@@ -78,6 +78,10 @@
 }
 
 @media (max-width:700px) {
+
+    .contact {
+        padding-left: 7rem !important;
+    }
     
     .contact h1{
         font-size: 3rem;
@@ -97,6 +101,10 @@
     
     .contact-form-content{
         flex-direction: column;
+    }
+
+    .contact {
+        padding-left: 5rem !important;
     }
 
     #FirstName,#email{
@@ -142,6 +150,6 @@
     
     .contact {
         padding: 0px 5%;
-        margin-left: -5px;
+        margin-left: -40px;
     }
 }

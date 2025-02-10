@@ -45,6 +45,11 @@
     letter-spacing: 0.6px;
 }
 
+.home-button {
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
 span {
     color: var(--main-color);
 }

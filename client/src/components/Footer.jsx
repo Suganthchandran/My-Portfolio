@@ -52,7 +52,7 @@ export const Footer = () => {
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 | Suganth A. All rights reserved.</p>
+        <p>&copy; 2025 | Suganth A. All rights reserved.</p>
     </div>
 </footer>
     </div>

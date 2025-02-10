@@ -48,11 +48,12 @@
   transition: transform 300ms;
   box-shadow: 0px 0px 10px 1px #000000ee;
   border-radius: 5px;
+  background-color: transparent;
 }
 
 .back,
 .front {
-  background-color: #151515;
+  background-color: transparent;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -73,18 +74,32 @@
 
 .back {
   transform: rotateY(180deg);
-  background-color: #171F38;
+  background-color: transparent;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+  pointer-events: auto;
+  gap:2rem;
+}
+
+.back-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .back h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: white;
+  background-color: transparent;
 }
 
 .back p {
@@ -92,18 +107,46 @@
   font-family: 400;
   font-size: 1rem;
   text-align: center;
-  margin-bottom: 2.3rem;
+  margin-bottom: 2rem;
   color: white;
+  background-color: transparent;
+}
+
+.work-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
+}
+
+.work-link {
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
 }
 
 .back .work-icon {
   font-size: 2rem;
   color: var(--text-color);
+  cursor: pointer;
+}
+
+.back .work-icon2 {
+  font-size: 2.3rem;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 .back .work-icon:hover {
   color: white;
 }
+
+.work-back-image {
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;
+}
+
 
 .front::before {
   position: absolute;
@@ -132,6 +175,13 @@
 
 .work-items:hover .content {
   transform: rotateY(180deg);
+}
+
+.work-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 @keyframes rotation_481 {
