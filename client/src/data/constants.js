@@ -8,9 +8,11 @@ import vibey from './Vibey.jpg'
 import travey from './Travey.jpeg'
 import blog from './blog.jpg'
 import cravely from './Cravely.webp'
+import image1 from './image.png'
 
 export const Bio = {
   image,
+  image1,
   name: "Suganth A",
   roles: [
     "Full Stack Developer",

@@ -69,7 +69,7 @@ export const Home = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
             >
-                <Tilt><img src={Bio.image} alt="Suganth" /></Tilt>
+                <Tilt><img src={Bio.image1} alt="Suganth" /></Tilt>
             </motion.div>
         </section>
     );
